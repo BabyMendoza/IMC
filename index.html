@@ -1,0 +1,29 @@
+package imc;
+import java.util.Scanner;
+
+public class Main { 
+
+public static void main(String[] args) 
+{ 
+double promedio=18.5, aumentado=25.0, moderado=30.0, Severo=35, muy severo: 40; 
+Scanner sc=new Scanner(System.in);
+double peso, altura, imc; 
+System.out.print("Ingrese su peso (kg): "); 
+peso=sc.nextDouble();
+ System.out.println("Ingrese su altura (m): "); 
+altura=sc.nextDouble(); 
+imc = peso/(Math.pow(altura,2)); 
+
+if (imc >= promedio) System.out.println("Tiene un peso (Promedio):"); 
+else
+if (imc >= aumentado) System.out.println("Tiene un peso(Aumentado):"); 
+else 
+if (imc >= moderado) System.out.println("Tiene un peso(Moderado):"); 
+else 
+if (imc >= severo) System.out.println("Tiene un peso(Severo):"); 
+else 
+if (imc >= muy severo) System.out.println("Tiene un peso(Muy severo):"); 
+else 
+System.out.println("Ud. está en IMC, vuelva a intentar "); 
+} 
+}
